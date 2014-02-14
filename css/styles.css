@@ -1,0 +1,36 @@
+/************************************************************************/
+/*	PAGE
+/************************************************************************/
+
+
+
+body{
+	 background: #fff;
+	 -webkit-font-smoothing: antialiased;
+   text-rendering: optimizeLegibility;
+}
+
+
+#clickme{
+  width: 300px;
+  height: 300px;
+  background: red;
+  border-radius: 100%;
+  cursor: pointer;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  transition: all .2s linear;
+}
+#clickme:hover{
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=80);
+  opacity: .8;
+}
+#clickme.currentclick:hover{
+  opacity: 1;
+}
+.currentclick, .currentColor{
+  background: blue !important;
+}
