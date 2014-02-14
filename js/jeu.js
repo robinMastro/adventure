@@ -33,6 +33,7 @@ function save_game() {
 }
 
 function load_game() {
+	 calculDateJour();
 
     if (!localStorage['SaveChain']) return;
     var save_data = JSON.parse(atob(localStorage['SaveChain']));
