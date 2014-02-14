@@ -22,10 +22,11 @@
   
   <div onclick="clickMoney()" id="clickme"></div>
 
-  <p id="money">money</p>
+  <p id="money">money : <div id = "score">0 </div></p>
   
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="../js/jeu.js"></script>
   </body>
 	 
 </html>
