@@ -23,6 +23,10 @@
   <div onclick="clickMoney()" id="clickme"></div>
 
   <p id="money">money : <div id = "score">0 </div></p>
+  </br>
+  <div id="Date">Date du jour : </div>
+</br>
+	<div id="DateDernierClick"></div>
   
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
