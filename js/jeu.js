@@ -6,25 +6,39 @@ var player={
 	xp:0,
 	firstCo:0,
 	moisClick:0,
-	jourClick:0
+	jourClick:0,
+	annulationClick:0,
+	jourConsecutifs:0
 };
 
 
 function clickMoney(){
 	//var anneeDernier=player.dateDernierClick.getYear();
 
-	if((player.jourClick!= player.dateJour.getDate())|| (player.moisClick!= player.dateJour.getMonth())){
+	if((player.jourClick!= player.dateJour.getDate())|| (player.moisClick!= player.dateJour.getMonth())|| player.annulationClick==1){
+		var ancienJour = player.jourClick;
+		var ancienMois = player.moisClick;
 		player.jourClick=player.dateJour.getDate();
 		player.moisClick=player.dateJour.getMonth();
-		player.score++;
+		
+		player.score= player.score + player.jourConsecutifs+1;
+		if((player.moisClick==ancienMois && player.jourClick==ancienJour+1)||(player.moisClick==ancienMois+1 && player.jourClick==1)||player.annulationClick==1){
+			player.jourConsecutifs++;
+		}else{
+			player.jourConsecutifs=0;
+		}
+		player.annulationClick=0;
 	//	player.dateDernierClick = new Date();
 	}else{
+		player.jourConsecutifs--;
 		player.score--;
+		player.annulationClick=1;
 	}
 
     var e = document.getElementById("score");
     e.innerHTML = player.score;
     save_game();
+    update_view();
 
 }
 
@@ -43,7 +57,7 @@ function load_game() {
 
 function update_view(){
 	var e = document.getElementById("score");
-    e.innerHTML = player.firstCo;
+    e.innerHTML = player.score;
     calculDateJour();
 
 	var e = document.getElementById("Date");
