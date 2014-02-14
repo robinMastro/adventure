@@ -21,7 +21,6 @@
   <h1>Adventure chain</h1>
   
   <a href="app/app.php">Get started now</a>
-Coucou
   
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
