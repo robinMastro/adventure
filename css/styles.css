@@ -8,6 +8,9 @@ body{
 	 -webkit-font-smoothing: antialiased;
    text-rendering: optimizeLegibility;
 }
+::selection {
+  background-color: transparent;
+}
 h1{
   font-family: 'Syntax-LT-Std', helvetica, arial, sans-serif;
   font-size: 21px;
