@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>App Adventure chain</title>	
+		<title>App | Adventure chain</title>	
 		<meta charset="utf-8" />
 		<meta name="description" content="Adventure chain." />
 		<meta name="keywords" content="Adventure, chain" />
@@ -16,16 +16,62 @@
     
 	</head>
 	
-  <body>
+  <body class="app-page">
   
-  <h1>Adventure chain App</h1>
+  <div id="page">
   
-  <div onclick="clickMoney()" id="clickme"></div>
-
-  <p id="money">money</p>
+    <div id="app">
+      <div class="wrapper">
+      
+        <a class="button-page" href="#"><img src="../img/store-button.png" alt="store button" /></a>
+        
+        <a class="button-page" href="#"><img src="../img/stats-button.png" alt="stats button" /></a>
+        
+        <img id="personnage" src="../img/girl-noob.png" alt="girl noob" />
+      
+        <div id="speudo">
+          
+          <p>Naemy</p>
+          
+        </div><!-- *** END SPEUDO *** -->
+        
+        <div id="level">
+          
+          <p>Level <span>2</span></p>
+          
+        </div><!-- *** END LEVEL *** -->
+      
+        <div id="panneau">
+        
+          <p><span id="experience">10</span>xp - <span id="needExperience">40 left to level up</span></p>
+          
+          <a href="#" id="tweetIt">Tweet it !</a>
+        
+          <p id="money"><span id="score">0</span></p>
+  
+          <div id="Date">Date du jour : </div>
+        
+        </div><!-- *** END PANNEAU *** -->
+        
+  
+      	<div id="DateDernierClick"></div>
+      	
+      </div><!-- *** END WRAPPER *** -->
+    </div><!-- *** END APP *** -->  
+    
+    <div id="appButton">
+      <div class="wrapper">
+    	
+    	<div onclick="clickMoney()" id="clickme"></div>
+    	
+      </div><!-- *** END WRAPPER *** -->
+    </div><!-- *** END APPBUTTON *** -->
+    
+  </div><!-- *** END PAGE *** -->    	
   
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="../js/jeu.js"></script>
   </body>
 	 
 </html>

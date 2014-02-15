@@ -11,6 +11,11 @@
   font-style:   normal;
   font-weight:  700;
 }
+#clickme{
+  width: 300px;
+  height: 300px;
+  background: red;
+}
 
 @font-face {
   font-family: 'Syntax-LT-Std';
@@ -35,17 +40,3 @@
     font-style: normal;
 
 }
-
-@font-face {
-    font-family: 'freightmicro_bookregular';
-    src: url('freightmicro_book-webfont.eot');
-    src: url('freightmicro_book-webfont.eot?#iefix') format('embedded-opentype'),
-         url('freightmicro_book-webfont.woff') format('woff'),
-         url('freightmicro_book-webfont.ttf') format('truetype'),
-         url('freightmicro_book-webfont.svg#freightmicro_bookregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
