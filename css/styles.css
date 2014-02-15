@@ -61,15 +61,15 @@ h2{
   max-width: 600px;
   margin: 0 auto;
 }
-#creationSex h1, #creationSex h2, #creationFace h1, #creationFace h2{
+h1, h2{
   text-align: center;
 }
-#creationSex h1, #creationFace h1{
+h1{
   padding: 15px 0;
   margin-top: 15px;
   border: 1px solid grey;
 }
-#creationSex h2, #creationFace h2{
+h2{
   padding: 35px 0;
 }
 
@@ -381,6 +381,7 @@ h2{
   float: left;
   text-decoration: none;
   margin-left: 16px;
+  overflow: hidden;
 }
 .button-page{
   float: left;

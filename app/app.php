@@ -45,7 +45,9 @@
         
           <p><span id="experience">10</span>xp - <span id="needExperience">40 left to level up</span></p>
           
-          <a href="#" id="tweetIt">Tweet it !</a>
+          <!-- <a href="#" id="tweetIt">Tweet it !</a> -->
+          
+          <iframe frameborder="0" border="0" cellspacing="0" id="tweetIt" src=""></iframe>
         
           <p id="money"><span id="score">0</span></p>
   
