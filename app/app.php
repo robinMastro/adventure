@@ -13,7 +13,9 @@
 		<!--[if lt IE 9]>
 		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->	
-    
+   <script type="text/javascript">
+function ouvre(fichier) {ff=window.open(fichier,"popup","width=700,height=500,left=100,top=100") }
+</script> 
 	</head>
 	
   <body class="app-page">
@@ -47,7 +49,9 @@
           
           <!-- <a href="#" id="tweetIt">Tweet it !</a> -->
           
-          <iframe frameborder="0" border="0" cellspacing="0" id="tweetIt" src=""></iframe>
+          <!--<iframe frameborder="0" border="0" cellspacing="0" id="tweetIt" src=""></iframe>-->
+          <a id="tweetIt" title="Partager sur Twitter" href="http://twitter.com/share?&amp;text=Un nouveau jeu trop bien :" target="popup" onClick="ouvre('http://twitter.com/share?&amp;text=Un nouveau jeu trop bien ');return false" ></a>
+          <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
         
           <p id="money"><span id="score">0</span></p>
   
