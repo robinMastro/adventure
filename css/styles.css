@@ -50,23 +50,23 @@ h2{
 
 
 /************************************************************************/
-/*	CREATION
+/*	CREATION SEX
 /************************************************************************/
 
 
-#creation{
+#creationSex{
   max-width: 600px;
   margin: 0 auto;
 }
-#creation h1, #creation h2{
+#creationSex h1, #creationSex h2, #creationFace h1, #creationFace h2{
   text-align: center;
 }
-#creation h1{
+#creationSex h1, #creationFace h1{
   padding: 15px 0;
   margin-top: 15px;
   border: 1px solid grey;
 }
-#creation h2{
+#creationSex h2, #creationFace h2{
   padding: 35px 0;
 }
 
@@ -143,6 +143,108 @@ h2{
   opacity: 1 !important;
   z-index: 15;
 }
+
+
+/************************************************************************/
+/*	CREATION FACE
+/************************************************************************/
+
+
+/*************/
+/*	SLIDER
+/*************/
+
+.visibleNearby {
+  width: 100%;
+  background: #141414;
+  color: #FFF;
+  padding-top: 25px;
+}
+.visibleNearby .rsGCaption {
+  font-size: 16px;
+  line-height: 18px;
+  padding: 12px 0 16px;
+  background: #141414;
+  width: 100%;
+  position: static;
+  float: left;
+  left: auto;
+  bottom: auto;
+  text-align: center;
+}
+.visibleNearby .rsGCaption span {
+  display: block;
+  clear: both;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+
+/* Scaling transforms */
+.visibleNearby .rsSlide img {
+  opacity: 0.45;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+
+  -webkit-transform: scale(0.9);  
+  -moz-transform: scale(0.9); 
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+}
+.visibleNearby .rsActiveSlide img {
+  opacity: 1;
+  -webkit-transform: scale(1);  
+  -moz-transform: scale(1); 
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* Non-linear resizing on smaller screens */
+@media screen and (min-width: 0px) and (max-width: 900px) { 
+  #gallery-1 {
+    padding: 12px 0 12px;
+  }
+  #gallery-1 .rsOverflow,
+  .royalSlider#gallery-1 {
+    height: 400px !important;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 500px) { 
+  #gallery-1 .rsOverflow,
+  .royalSlider#gallery-1 {
+    height: 300px !important;
+  }
+}
+
+/*************/
+/*	END SLIDER
+/*************/
+
+.face-button{
+  font-family: 'Syntax-LT-Std', helvetica, arial, sans-serif;
+  font-weight: 700;
+  color: #a7a4a3;
+  background: #e0dfd7;
+  padding: 15px 15px;
+  font-size: 21px;
+  margin: 30px 30px 50px 0;
+  float: left;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /************************************************************************/

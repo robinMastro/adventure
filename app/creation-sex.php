@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Creation | Adventure chain</title>	
+		<title>Creation sex | Adventure chain</title>	
 		<meta charset="utf-8" />
 		<meta name="description" content="Adventure chain." />
 		<meta name="keywords" content="Adventure, chain" />
@@ -13,13 +13,12 @@
 		<!--[if lt IE 9]>
 		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->	
-    
 	</head>
 	
   <body>
   
   <div id="page">
-    <div id="creation">
+    <div id="creationSex">
     
       <h1>Creation</h1>
       <h2>Choose your character's sex</h2>
@@ -45,11 +44,11 @@
       
       <hr class="clear"/>
       
-    </div><!-- *** END CREATION *** -->
+    </div><!-- *** END CREATION SEX *** -->
   </div><!-- *** END PAGE *** -->
   
-  
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
   </body>
 	 
 </html>
