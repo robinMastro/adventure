@@ -43,6 +43,11 @@ h2{
   clear: both;
   visibility: hidden;
 }
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 
 
@@ -412,6 +417,81 @@ h2{
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+
+
+/************************************************************************/
+/*	SHOP
+/************************************************************************/
+
+
+#head-shop{
+  background: #bc3f39;
+  width: 90%;
+  height: 30px;
+  margin: 0 auto;
+}
+#head-shop li{
+  font-family: 'freightmicro_boldscregular', helvetica, arial, sans-serif;
+  font-size: 19px;
+  color: #fdfbec;
+  float: left;
+  line-height: 30px;
+  width: 135px;
+  text-align: center;
+}
+/*
+#wrapper-item{
+  width: 90%;
+  margin: 0 auto;
+  height: 200px;
+  overflow: hidden !important;
+}
+*/
+/*
+.col-item{
+  width: 135px;
+  overflow: auto !important;
+  height: 200px;
+}
+
+*/
+#content-item{
+  width: 90%;
+  margin: 0 auto;
+}
+.wrapper-item{
+  height: 350px;
+  width: 135px;     
+  overflow: hidden;
+  float: left
+}
+.col-item{
+  height: 350px;
+  width: 150px;
+  overflow: auto;
+}
+.shop-item{
+  width: 135px;
+  height: 135px;
+  text-indent: -9999px;
+  background: #c26f67;
+  margin: 0;
+}
+
+
+
+/*************/
+/*	SHOP SHOES ITEM
+/*************/
+
+.shoes-1{
+  background: #c26f67 url('../img/shop/shoes/shoes-1.png') no-repeat center center;
+}
+.shoes-3{
+  background: #c26f67 url('../img/shop/shoes/shoes-1.png') no-repeat center center;
+}
+
 
 
 

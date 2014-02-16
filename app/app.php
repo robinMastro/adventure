@@ -13,7 +13,9 @@
 		<!--[if lt IE 9]>
 		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->	
-    
+   <script type="text/javascript">
+function ouvre(fichier) {ff=window.open(fichier,"popup","width=700,height=500,left=100,top=100") }
+</script> 
 	</head>
 	
   <body class="app-page">
@@ -23,7 +25,7 @@
     <div id="app">
       <div class="wrapper">
       
-        <a class="button-page" href="#"><img src="../img/store-button.png" alt="store button" /></a>
+        <a class="button-page" href="shop.php"><img src="../img/store-button.png" alt="store button" /></a>
         
         <a class="button-page" href="#"><img src="../img/stats-button.png" alt="stats button" /></a>
         
@@ -45,9 +47,8 @@
         
           <p><span id="experience">10</span>xp - <span id="needExperience">40 left to level up</span></p>
           
-          <!-- <a href="#" id="tweetIt">Tweet it !</a> -->
+          <a id="tweetIt" title="Partager sur Twitter" href="http://twitter.com/share?&amp;text=Un nouveau jeu trop bien :" target="popup" onClick="ouvre('http://twitter.com/share?&amp;text=Un nouveau jeu trop bien ');return false" >Tweet it !</a>
           
-          <iframe frameborder="0" border="0" cellspacing="0" id="tweetIt" src=""></iframe>
         
           <p id="money"><span id="score">0</span></p>
   
@@ -74,6 +75,7 @@
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="../js/jeu.js"></script>
+  <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
   </body>
 	 
 </html>
