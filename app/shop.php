@@ -36,9 +36,9 @@
           
             <div class="shoes col-item">
               <p class="shop-item shoes-1">Shoes 1</p>
-              <p class="shop-item shoes-1">Shoes 1</p>
-              <p class="shop-item shoes-1">Shoes 1</p>
-              <p class="shop-item shoes-1">Shoes 1</p>
+              <p class="shop-item shoes-2">Shoes 1</p>
+              <p class="shop-item shoes-3">Shoes 1</p>
+              <p class="shop-item shoes-4">Shoes 1</p>
             </div><!-- *** END SHOES *** -->
             
             <hr class="clear"/>
@@ -46,11 +46,11 @@
           
           <div class="wrapper-item">
     
-            <div class="shoes col-item">
-              <p class="shop-item shoes-1">Shoes 1</p>
-              <p class="shop-item shoes-1">Shoes 1</p>
-              <p class="shop-item shoes-1">Shoes 1</p>
-              <p class="shop-item shoes-1">Shoes 1</p>
+            <div class="pants col-item">
+              <p class="shop-item pants-1">Pants 1</p>
+              <p class="shop-item pants-2">Pants 1</p>
+              <p class="shop-item pants-3">Pants 1</p>
+              <p class="shop-item pants-4">Pants 1</p>
             </div>
             
             <hr class="clear"/>
@@ -58,11 +58,11 @@
           
           <div class="wrapper-item">
     
-            <div class="shoes col-item">
-              <p class="shop-item shoes-1">Shoes 1</p>
-              <p class="shop-item shoes-1">Shoes 1</p>
-              <p class="shop-item shoes-1">Shoes 1</p>
-              <p class="shop-item shoes-1">Shoes 1</p>
+            <div class="top col-item">
+              <p class="shop-item top-1">Top 1</p>
+              <p class="shop-item top-2">Top 1</p>
+              <p class="shop-item top-3">Top 1</p>
+              <p class="shop-item top-4">Top 1</p>
             </div>
             
             <hr class="clear"/>
@@ -70,24 +70,56 @@
           
           <div class="wrapper-item">
     
-            <div class="shoes col-item">
-              <p class="shop-item shoes-1">Shoes 1</p>
-              <p class="shop-item shoes-1">Shoes 1</p>
-              <p class="shop-item shoes-1">Shoes 1</p>
-              <p class="shop-item shoes-1">Shoes 1</p>
+            <div class="hat col-item">
+              <p class="shop-item hat-1">Hat 1</p>
+              <p class="shop-item hat-2">Hat 1</p>
+              <p class="shop-item hat-3">Hat 1</p>
+              <p class="shop-item hat-4">Hat 1</p>
             </div>
             
             <hr class="clear"/>
           </div><!-- *** END WRAPPER ITEM *** -->
-          
+          <hr class="clear"/>
         </div><!-- *** END CONTENT ITEM *** -->
         
       </div><!-- *** END WRAPPER *** -->      
     </div><!-- *** END SHOP *** -->
     
+    <div id="marchand">
+      <div class="wrapper">
+      
+        <img src="../img/shop/marchand.svg" alt="Buy me something" />
+        
+        <div id="box-marchand">
+        
+          <p id="text-marchand">This piece is a rare form of art, a very intricate 
+          object ! <span>+10% xp + 1% gold</span>
+          </p>
+          
+          <p id="buyIt">Buy it</p>
+          <p id="tryIt">Try it</p>
+          
+          <hr class="clear" />
+        
+        </div><!-- *** END TEXT MARCHAND *** -->
+      
+      </div><!-- *** END WRAPPER *** -->
+    </div><!-- *** END PAGE *** -->
+    
   </div><!-- *** END PAGE *** -->
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    $(".shoes .shop-item").click(function(){
+        $(".shoes .shop-item").removeClass("item-current");
+    });
+    $(".shoes-1").click(function(){
+        $(".shoes-1").addClass("item-current");
+    });
+    $(".shoes-3").click(function(){
+        $(".shoes-3").addClass("item-current");
+    });
+  </script>
   
   </body>
 	 
