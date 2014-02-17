@@ -9,8 +9,12 @@ var player={
 	jourClick:0,
 	annulationClick:0,
 	jourConsecutifs:0,
-	niveau:0
+	niveau:0,
+	habitude : Array()
 };
+
+
+
 
 
 function clickMoney(){
@@ -68,6 +72,8 @@ function load_game() {
     var save_data = JSON.parse(atob(localStorage['SaveChain']));
     player = save_data;
     update_view();
+
+
 }
 
 function update_view(){
@@ -87,6 +93,19 @@ function update_view(){
     var e = document.getElementById("needExperience");
     var xpNeeded = player.niveau *10 - player.xp;
     e.innerHTML=  xpNeeded + 'left to level up';
+
+    var e = document.getElementById("habitude");
+    e.innerHTML= '';
+    for (var i=0;i<player.habitude.length;i++){
+    	e.innerHTML= e.innerHTML + '<option value=' + player.habitude[i] +'> '+ player.habitude[i]+ '</option>';
+	}
+}
+
+function ajoutHabit() {
+	var e = document.getElementById("habitudeAAjouter").value;
+	player.habitude.push(e);
+	save_game();
+	update_view();
 }
 
 function calculDateJour(){
