@@ -591,6 +591,9 @@ h2{
   margin-top: 40px;
 }
 
+/*************/
+/*	BOUTON APP
+/*************/
 
 
 #appButton{
@@ -607,6 +610,78 @@ h2{
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+
+
+#addchain{
+  background: url('../img/addchain.svg') no-repeat;
+  height: 48px;
+  width: 48px;
+  cursor: pointer;
+}
+#new_chain label{
+  font-family: 'Syntax-LT-Std', helvetica, arial, sans-serif;
+  font-size: 21px;
+  color: #fcebed;
+  background: #d99590;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px 0;
+}
+.chainpop {
+  background: #fdfcee;
+  width: 450px;
+  /*
+border:1px solid #999999;
+  cursor:default;
+  display:none;
+  margin-top: 15px;
+  position:absolute;
+  text-align:left;
+  width:394px;
+  z-index:50;
+  padding: 25px 25px 20px;
+*/
+}
+#chainname{
+  background: #f6ece0;
+  border: none;
+  padding: 15px;
+}
+::-webkit-input-placeholder {
+   color: #be8984;
+   font-family: 'freightmicro_bookregular', helvetica, arial, sans-serif !important;
+   font-size: 18px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: red;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: red;  
+}
+
+:-ms-input-placeholder {  
+   color: red;  
+}
+
+label {
+  display: block;
+  margin-bottom: 3px;
+  padding-left: 15px;
+  text-indent: -15px;
+}
+
+.messagepop p, .messagepop.div {
+  border-bottom: 1px solid #EFEFEF;
+  margin: 8px 0;
+  padding-bottom: 8px;
+}
+
+
+
+
 
 
 
