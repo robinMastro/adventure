@@ -101,10 +101,13 @@
           
           <hr class="clear" />
         
-        </div><!-- *** END TEXT MARCHAND *** -->
+        </div><!-- *** END BOX MARCHAND *** -->
       
       </div><!-- *** END WRAPPER *** -->
-    </div><!-- *** END PAGE *** -->
+      
+      <hr class="clear" />
+      
+    </div><!-- *** END MARCHAND *** -->
     
   </div><!-- *** END PAGE *** -->
   

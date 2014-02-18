@@ -21,9 +21,14 @@
     <div id="page" class="landing">
       
       <div id="header-landing">
+      
+        <div id="header-backgroundColor">
+          </div>
+        
+      
         <div class="wrapper-landing">
         
-          <img class="hl-left" src="img/landing/header-personnage.png" alt="Adventure chain présentation" />
+          <img class="hl-left" src="img/landing/header-landing-perso.svg" alt="Adventure chain présentation" />
           
           <h1 class="hl-right"><img src="img/landing/logo-adventurechain.png" at="Logo Adventure chain" /></h1>
           
@@ -34,7 +39,8 @@
           <a class="hl-right" href="#">Get started now</a>
           
           <hr class="clear" />
-        
+          
+           
         </div><!-- *** END WRAPPER LANDING *** -->
       </div><!-- *** END HEADER LANDING *** -->
       

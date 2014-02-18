@@ -2,7 +2,9 @@
 /*	PAGE
 /************************************************************************/
 
-
+html, body{
+  height: 100%;
+}
 body{
 	 background: #fff;
 	 -webkit-font-smoothing: antialiased;
@@ -12,14 +14,10 @@ body{
 ::selection {
   background-color: transparent;
 }
+:focus{
+  outline: none;
+}
 h1{
-  /*
-font-family: 'Syntax-LT-Std', helvetica, arial, sans-serif;
-  font-size: 21px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #b69d74;
-*/
   padding: 0;
   margin: 0;
 }
@@ -31,6 +29,7 @@ h2{
   color: #a7a4a3;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 .wrapper{
   max-width: 600px;
@@ -76,8 +75,15 @@ ul{
 }
 
 #header-landing{
-  background: #ecebeb;
-  border-bottom: 1px solid #8e8e8e;
+  background: #2d2529;
+  position: relative;
+  height: 504px;
+  z-index: 1;
+  border-bottom: 8px solid rgba(66,32,32,.4);
+  background: url('../img/landing/pattern.png') top left, url('../img/landing/background-header-right.jpg');
+}
+#header-landing .wrapper-landing{
+  background: url('../img/landing/header-background-left.svg') no-repeat left top, url('../img/landing/logo-adventurechain-background.svg') no-repeat 190px 90px;
 }
 .wrapper-landing{
   max-width: 1080px;
@@ -85,11 +91,12 @@ ul{
 }
 #header-landing .wrapper-landing{
   padding-top: 80px;
+  z-index: 10;
 }
 .hl-left{
   float: left;
   margin-right: 117px;
-  margin-bottom: -90px;
+  margin-left: 45px;
 }
 .hl-right{
   float: left;
@@ -121,6 +128,61 @@ ul{
   text-decoration: none;
   padding: 10px;
 }
+#header-backgroundColor{
+  position: absolute;
+  height: 512px;
+  width: 26%;
+  left: 0;
+  top: 0;
+  background: #2E262A;
+  z-index: -1;
+}
+@media screen and (max-width: 3190px){
+  #header-backgroundColor{
+    width: 35%;
+  }
+}
+@media screen and (max-width: 3060px){
+  #header-backgroundColor{
+    width: 33%;
+  }
+}
+@media screen and (max-width: 2700px){
+  #header-backgroundColor{
+    width: 30%;
+  }
+}
+@media screen and (max-width: 2310px){
+  #header-backgroundColor{
+    width: 27%;
+  }
+}
+@media screen and (max-width: 2010px){
+  #header-backgroundColor{
+    width: 23%;
+  }
+}
+@media screen and (max-width: 1900px){
+  #header-backgroundColor{
+    width: 22%;
+  }
+}
+@media screen and (max-width: 1640px){
+  #header-backgroundColor{
+    width: 17%;
+  }
+}
+@media screen and (max-width: 1400px){
+  #header-backgroundColor{
+    width: 12%;
+  }
+}
+@media screen and (max-width: 1220px){
+  #header-backgroundColor{
+    width: 6%;
+  }
+}
+
 
 /*************/
 /*	WORK LANDING
@@ -248,34 +310,79 @@ ul{
 /*	CREATION SEX
 /************************************************************************/
 
+/*************/
+/*	CREATION SEX ANIMATION
+/*************/
 
-#creationSex{
-  max-width: 600px;
+@-webkit-keyframes bg-home {
+  0%   { background-position:0 0; }
+  50% { background-position:-960px -360px; }
+  100% { background-position:0 0; }
+}
+@-moz-keyframes bg-home {
+  0%   { background-position:0 0; }
+  50% { background-position:-960px -360px; }
+  100% { background-position:0 0; }
+}
+@-o-keyframes bg-home {
+  0%   { background-position:0 0; }
+  50% { background-position:-960px -360px; }
+  100% { background-position:0 0; }
+}
+@-ms-keyframes bg-home {
+  0%   { background-position:0 0; }
+  50% { background-position:-960px -360px; }
+  100% { background-position:0 0; }
+}
+@keyframes bg-home {
+  0%   { background-position:0 0; }
+  50% { background-position:-960px -360px; }
+  100% { background-position:0 0; }
+}
+
+/*************/
+/*	END ANIMATION
+/*************/
+
+#creationSexbg{
+  background: #dde9c6 url('../img/creation/choose-Sexbg.svg');
+  background: -moz-linear-gradient(top, #dde9c6 0%, #9fd5bb 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dde9c6), color-stop(100%,#9fd5bb));
+  background: -webkit-linear-gradient(top, #dde9c6 0%,#9fd5bb 100%);
+  background: -o-linear-gradient(top, #dde9c6 0%,#9fd5bb 100%);
+  background: -ms-linear-gradient(top, #dde9c6 0%,#9fd5bb 100%);
+  background: linear-gradient(to bottom, #dde9c6 0%,#9fd5bb 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dde9c6', endColorstr='#9fd5bb',GradientType=0 );
+}
+#creationSexbg #page{
+  height: 100%;
+  -webkit-animation: bg-home 100s linear infinite;
+  -moz-animation: bg-home 100s linear infinite;
+  -o-animation: bg-home 100s linear infinite;
+  -ms-animation: bg-home 100s linear infinite;
+  animation: bg-home 100s linear infinite;
+}
+#creationSex h1{
+  background: url('../img/creation/header-creationSex.svg') no-repeat center;
+  text-indent: -9999px;
+  height: 50px;
+  display: block;
   margin: 0 auto;
-}
-h2{
   text-align: center;
+  margin-bottom: 35px;
 }
-/*
-h1{
-  padding: 15px 0;
-  margin-top: 15px;
-  border: 1px solid grey;
-  text-align: center;
-}
-*/
-h2{
-  padding: 35px 0;
+#creationSex h2{
+  color: #fdfbec;
+  background: #aacfb4;
+  width: 310px;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 75px;
 }
 
-#chooseBoy{
-  background: url('../img/creation-boy.png') no-repeat center center;
-  z-index: 10;
-}
-#chooseGirl{
-  background: url('../img/creation-girl.png') no-repeat center center;
-  z-index: 5;
-}
+
+
 .choose{
   width: 258px;
   height: 188px;
@@ -283,22 +390,13 @@ h2{
   margin: 0 21px;
   margin-top: 50px;
   position: relative;
+  background: url('../img/creation/choose-creation.svg') no-repeat center center;
 }
 .choose img{
   display: block;
   margin: 0 auto;
   position: relative;
-  top: -48px;
-}
-.choose p{
-  text-align: center;
-  font-family: 'Syntax-LT-Std', helvetica, arial, sans-serif;
-  font-size: 21px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #b69d74;
-  margin: 0;
-  margin-top: -15px;
+  top: -85px;
 }
 .choose a{
   display: block;
@@ -306,18 +404,23 @@ h2{
   width: 258px;
   text-decoration: none;
 }
+#chooseBoy{
+  z-index: 10;
+}
+#chooseGirl{
+  z-index: 5;
+}
 #chooseBoy:before{
   content:"OR";
   font-family: 'freightmicro_boldscregular', helvetica, arial, sans-serif;
   font-size: 18px;
-  height: 63px;
-  width: 63px;
-  border-radius: 100%;
+  height: 76px;
+  width: 76px;
+  color: #a25552;
+  background: url('../img/creation/or-creationSex.svg') no-repeat center center;
   display: block;
-  background: #a7a4a3;
-  color: white;
   text-align: center;
-  line-height: 63px;
+  line-height: 76px;
   position: absolute;
   top: 50%;
   right: -50px;
@@ -341,7 +444,21 @@ h2{
   opacity: 1 !important;
   z-index: 15;
 }
-
+.choose p{
+  text-align: center;
+  font-family: 'Syntax-LT-Std', helvetica, arial, sans-serif;
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fdfbec;
+  margin: 0;
+  background: url('../img/creation/genre-background.svg') no-repeat center center;
+  height: 37px;
+  width: 100%;
+  line-height: 37px;
+  position: absolute;
+  bottom: 0;
+}
 
 /************************************************************************/
 /*	CREATION FACE
@@ -598,6 +715,7 @@ h2{
 
 #appButton{
   background: #a87255;
+  padding-top: 50px;
 }
 #clickme{
   background: url('../img/clickme.png') no-repeat;
@@ -611,15 +729,30 @@ h2{
   margin-bottom: 50px;
 }
 
-
+/*************/
+/*	AJOUTER UNE LIST
+/*************/
 
 #addchain{
-  background: url('../img/addchain.svg') no-repeat;
+  /* background: url('../img/addchain.svg') no-repeat; */
   height: 48px;
   width: 48px;
   cursor: pointer;
+  float: right;
+  position: relative;
+  bottom: 68px;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  transition: all .2s linear;
 }
-#new_chain label{
+#addchain:hover{
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=80);
+  opacity: .8;
+}
+.chainpop label{
   font-family: 'Syntax-LT-Std', helvetica, arial, sans-serif;
   font-size: 21px;
   color: #fcebed;
@@ -630,23 +763,44 @@ h2{
 }
 .chainpop {
   background: #fdfcee;
-  width: 450px;
-  /*
-border:1px solid #999999;
-  cursor:default;
-  display:none;
-  margin-top: 15px;
-  position:absolute;
-  text-align:left;
-  width:394px;
-  z-index:50;
-  padding: 25px 25px 20px;
-*/
+  width: 385px;
+  display: none;
+  border: 5px solid #5e514a;
+  position: absolute;
+  left: 50%;
+  margin-left: -192px;
+  z-index: 20;
+  
 }
-#chainname{
+#habitudeAAjouter{
   background: #f6ece0;
   border: none;
   padding: 15px;
+  margin: 25px 0 25px 25px;
+}
+
+#chain_submit{
+  border: none;
+  color: #fcebed;
+  background: #bc6f68;
+  font-family: 'Syntax-LT-Std', helvetica, arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  position: relative;
+  top: 2px;
+  padding: 9px;
+  right: 4px;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  transition: all .2s linear;
+}
+#chain_submit:hover{
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=80);
+  opacity: .8;
 }
 ::-webkit-input-placeholder {
    color: #be8984;
@@ -655,15 +809,21 @@ border:1px solid #999999;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: red;  
+   color: #be8984;
+   font-family: 'freightmicro_bookregular', helvetica, arial, sans-serif !important;
+   font-size: 18px; 
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: red;  
+   color: #be8984;
+   font-family: 'freightmicro_bookregular', helvetica, arial, sans-serif !important;
+   font-size: 18px;
 }
 
 :-ms-input-placeholder {  
-   color: red;  
+   color: #be8984;
+   font-family: 'freightmicro_bookregular', helvetica, arial, sans-serif !important;
+   font-size: 18px; 
 }
 
 label {
@@ -673,12 +833,43 @@ label {
   text-indent: -15px;
 }
 
-.messagepop p, .messagepop.div {
-  border-bottom: 1px solid #EFEFEF;
-  margin: 8px 0;
-  padding-bottom: 8px;
-}
+/*************/
+/*	SELECT LIST
+/*************/
 
+#mainhabitude{
+  overflow:hidden;
+  width: 315px;
+  height: 48px;
+  margin-top: 50px;
+  margin-left: 35px;    
+  margin: 0 auto;
+  border: 10px solid #e7958d;
+  background: #fff url('../img/dropdown-arrow.svg') no-repeat 267px 0px;
+}
+#mainhabitude:after{
+  content: "";
+  display: block;
+  background: url('../img/habitude-background.svg') no-repeat center bottom;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  top: 53px;
+}
+#mainhabitude select{
+  border: 0;
+  font-family: 'Syntax-LT-Std', helvetica, arial, sans-serif;
+  color: #777;
+  -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+ width: 315px;
+ padding-left: 15px;
+ height: 48px;
+ background: transparent;
+}
 
 
 

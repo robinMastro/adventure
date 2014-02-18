@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="257px" height="37px" viewBox="0 0 257 37" enable-background="new 0 0 257 37" xml:space="preserve">
+<g>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="18.5" x2="257" y2="18.5">
+		<stop  offset="0.0647" style="stop-color:#B85450"/>
+		<stop  offset="1" style="stop-color:#9A4C4B"/>
+	</linearGradient>
+	<rect fill="url(#SVGID_1_)" width="257" height="37"/>
+	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="123.4287" y1="34.334" x2="123.4287" y2="-6.0865">
+		<stop  offset="0" style="stop-color:#D67563"/>
+		<stop  offset="1" style="stop-color:#D67563;stop-opacity:0"/>
+	</linearGradient>
+	<polygon opacity="0.3" fill="url(#SVGID_2_)" points="184.059,0 156.492,37 62.798,37 94.047,0.195 	"/>
+	<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="183.2959" y1="34.334" x2="183.2959" y2="-6.0865">
+		<stop  offset="0" style="stop-color:#D67563"/>
+		<stop  offset="1" style="stop-color:#D67563;stop-opacity:0"/>
+	</linearGradient>
+	<polygon opacity="0.3" fill="url(#SVGID_3_)" points="185.875,37 174.799,37 200.983,0.195 154.592,0 212,0 	"/>
+	<circle opacity="0.6" fill="#7B2C1B" cx="82.542" cy="18.5" r="2.942"/>
+	<circle opacity="0.6" fill="#7B2C1B" cx="168.542" cy="18.5" r="2.942"/>
+</g>
+</svg>

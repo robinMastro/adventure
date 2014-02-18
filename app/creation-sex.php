@@ -15,36 +15,40 @@
 		<![endif]-->	
 	</head>
 	
-  <body>
+  <body id="creationSexbg">
   
   <div id="page">
     <div id="creationSex">
+      <div class="wrapper">
     
-      <h1>Creation</h1>
-      <h2>Choose your character's sex</h2>
-      
-      <div id="chooseBoy" class="choose">
-      
-        <a href="#">
-          <img src="../img/choose-boy.png" alt="choose a boy" />
-          <p>a boy</p>
-        </a>
+        <h1>Creation</h1>
+        <h2>Choose your character's sex</h2>
         
-      </div>
-      
-      
-      
-      <div id="chooseGirl" class="choose">
+        <div id="chooseBoy" class="choose">
         
-        <a href="#">
-          <img src="../img/choose-girl.png" alt="choose a girl" />
-          <p>a girl</p>
-        </a>
-      </div>
-      
-      <hr class="clear"/>
+          <a href="#">
+            <img src="../img/creation/choose-girl.svg" alt="choose a boy" />
+            <p>a boy</p>
+          </a>
+          
+        </div><!-- *** END CHOOSEBOY *** -->
+        
+        
+        
+        <div id="chooseGirl" class="choose">
+          
+          <a href="#">
+            <img src="../img/creation/choose-girl.svg" alt="choose a girl" />
+            <p>a girl</p>
+          </a>
+        </div><!-- *** END CHOOSEGIRL *** -->
+        
+        <hr class="clear"/>
+        
+      </div><!-- *** END WRAPPER *** -->
       
     </div><!-- *** END CREATION SEX *** -->
+    
   </div><!-- *** END PAGE *** -->
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
