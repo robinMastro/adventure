@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="185.552px" height="200.059px" viewBox="0 0 185.552 200.059" enable-background="new 0 0 185.552 200.059"
+	 xml:space="preserve">
+<g>
+	<circle opacity="0.8" fill="#A24A46" cx="92.776" cy="107.282" r="92.776"/>
+	<path fill="#8D3129" d="M169.298,97.029c0,44.473-34.26,80.523-76.522,80.523c-42.262,0-76.522-36.051-76.522-80.523
+		c0-1.264,0.028-17.882,0.083-19.131c1.871-42.722,35.379-61.393,76.44-61.393c40.629,0,73.863,23.435,76.371,65.522
+		C169.248,83.72,169.298,95.312,169.298,97.029z"/>
+	<g>
+		<circle fill="#DB6959" cx="92.776" cy="76.523" r="76.522"/>
+		<circle fill="#EA9F70" cx="60.704" cy="36.949" r="5.439"/>
+		<g>
+			<defs>
+				<circle id="SVGID_1_" cx="92.776" cy="76.523" r="76.522"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  overflow="visible"/>
+			</clipPath>
+			<radialGradient id="SVGID_3_" cx="67.6509" cy="43.896" r="90.3113" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#DB6F2D"/>
+				<stop  offset="0.8336" style="stop-color:#D6432A;stop-opacity:0"/>
+			</radialGradient>
+			<circle clip-path="url(#SVGID_2_)" fill="url(#SVGID_3_)" cx="67.651" cy="43.897" r="90.311"/>
+			<radialGradient id="SVGID_4_" cx="60.6704" cy="36.9155" r="44.2927" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#DB6F2D"/>
+				<stop  offset="0.8336" style="stop-color:#D6432A;stop-opacity:0"/>
+			</radialGradient>
+			<circle opacity="0.3" clip-path="url(#SVGID_2_)" fill="url(#SVGID_4_)" cx="60.671" cy="36.917" r="44.293"/>
+			<radialGradient id="SVGID_5_" cx="57.6694" cy="33.1646" r="37.2903" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#DB6F2D"/>
+				<stop  offset="0.8336" style="stop-color:#D6432A;stop-opacity:0"/>
+			</radialGradient>
+			<circle opacity="0.3" clip-path="url(#SVGID_2_)" fill="url(#SVGID_5_)" cx="57.669" cy="33.166" r="37.29"/>
+		</g>
+	</g>
+</g>
+</svg>

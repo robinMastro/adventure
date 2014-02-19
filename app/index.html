@@ -31,7 +31,9 @@
         
         <a class="button-page" href="#"><img src="../img/stats-button.png" alt="stats button" /></a>
         
-        <img id="personnage" src="../img/girl-noob.png" alt="girl noob" />
+        <!-- <img id="personnage" src="../img/girl-noob.png" alt="girl noob" /> -->
+        
+        
       
         <div id="speudo">
           
@@ -61,6 +63,21 @@
   
       	<div id="DateDernierClick"></div>
       	
+      	<div id="personnage">
+          
+          <img class="personnage-item" id="base" src="../img/objet/base.svg" alt="base" />
+          
+          <img class="personnage-item" id="top" src="../img/objet/top-base.svg" alt="top" />
+          
+          <img class="personnage-item" id="pants" src="../img/objet/shorts-base.svg" alt="pants" />
+          
+          <img class="personnage-item" id="hair" src="../img/objet/hair1.svg" alt="hair" />
+           
+          <img class="personnage-item" id="shoes" src="../img/objet/shoes-base.svg" alt="shoes" />
+        
+        </div>
+      	
+      	
       </div><!-- *** END WRAPPER *** -->
     </div><!-- *** END APP *** -->  
     
@@ -68,25 +85,52 @@
       <div class="wrapper">
       
       
-      <div class="chainpop pop">
-
+      <!--
+<div class="chainpop pop">
+          <form method="post" id="new_chain" action="#">
           
               <label for="chainname">How is your character called ?</label>
               
-              <input  type="text" size="30" name="habitudeAAjouter" id="habitudeAAjouter"/>
+              <input placeholder="Most awesome habit. Ever." type="text" size="30" name="chainname" id="chainname" />
+              
+              <input type="submit" value="OK" name="commit" id="chain_submit"/> or <a class="close">Cancel</a>
+        
+          </form>
+      </div>
+-->
+      
+      <div class="chainpop pop">
+
+          
+              <label for="chainname">How is your chain called ?</label>
+              
+              <input placeholder="Activity i'd like to do everyday ?" type="text" size="30" name="habitudeAAjouter" id="habitudeAAjouter"/>
               
               <input type="button" value="OK" name="commit" id="chain_submit" onClick="ajoutHabit()"/> 
         
 
       </div>
       
-      <select name="chainlist" id="habitude">
-        <option value="Milk">Fresh Milk</option>
-        <option value="Cheese">Old Cheese</option>
-        <option value="Bread">Hot Bread</option>
-      </select>
+      <div id="mainhabitude">
+        <select id="habitude" name="chainlist">
+          <option>Activity</option>
+        </select>
+      </div><!-- *** END MAIN HABITUDE *** -->
       
-      <div id="addchain"></div>
+      <div id="addchain">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px"
+          	 height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+          <g id="addchainbackground">
+          	<rect fill="#E7958D" width="48" height="48"/>
+          </g>
+          <g id="addchainmove">
+          	<g>
+          		<rect x="22" y="12" fill="#F8F6E7" width="5" height="23"/>
+          		<rect x="13" y="21" fill="#F8F6E7" width="23" height="5"/>
+          	</g>
+          </g>
+          </svg>
+      </div>
     	
     	<div onclick="clickMoney()" id="clickme"></div>
     	
