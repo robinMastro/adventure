@@ -1,7 +1,6 @@
 var player={
 	score :0,
 	dateJour : Date(),
-	//dateDernierClick : Date(),
 	argent :0,
 	xp:0,
 	firstCo:0,
@@ -10,9 +9,16 @@ var player={
 	annulationClick:0,
 	jourConsecutifs:0,
 	niveau:0,
-	habitude : Array()
+	habitude : Array(),
+	shoesG : 0,
+	pantsG : 0,
+	hautG : 0,
+	hatG : 0,
+	shoesX : 0,
+	pantsX : 0,
+	hautX : 0,
+	hatX : 0
 };
-
 
 
 
@@ -25,9 +31,23 @@ function clickMoney(){
 		var ancienMois = player.moisClick;
 		player.jourClick=player.dateJour.getDate();
 		player.moisClick=player.dateJour.getMonth();
-		
-		player.score= player.score + player.jourConsecutifs+1;
-		player.xp = player.xp + player.jourConsecutifs+1;
+
+		//Gain d'argent
+		if(player.shoesG + player.pantsG + player.hautG + player.hatG != 0){
+			player.score= player.score + Math.round((player.jourConsecutifs+1)*(player.shoesG + player.pantsG + player.hautG + player.hatG)/100);
+		}else{
+			player.score= player.score + (player.jourConsecutifs+1);
+		}
+
+		//Gain d'xp
+		if(player.shoesG + player.pantsG + player.hautG + player.hatG != 0){
+			player.xp = player.xp + Math.round((player.jourConsecutifs+1)*(player.shoesX + player.pantsX + player.hautX + player.hatX)/100);
+		}else{
+			player.xp = player.xp + player.jourConsecutifs+1;
+		}
+
+
+
 		if(player.xp > player.niveau * 10){
 			player.xp=0;
 			player.niveau++;
@@ -40,8 +60,20 @@ function clickMoney(){
 		player.annulationClick=0;
 	//	player.dateDernierClick = new Date();
 	}else{
-		player.score= player.score - player.jourConsecutifs;
+		if(player.shoesG + player.pantsG + player.hautG + player.hatG != 0){
+			player.score= player.score - Math.round((player.jourConsecutifs)*(player.shoesG + player.pantsG + player.hautG + player.hatG)/100);
+		}else{
+			player.score= player.score -(player.jourConsecutifs);
+		}
+
+		if(player.shoesX + player.pantsX + player.hautX + player.hatX != 0){
+			player.xp = player.xp- Math.round((player.jourConsecutifs)*(player.shoesX + player.pantsX + player.hautX + player.hatX)/100);
+		}else{
+			player.xp= player.xp -(player.jourConsecutifs);
+		}
 		player.xp = player.xp- player.jourConsecutifs;
+
+
 		if(player.xp <0){
 			player.xp=(player.niveau-1)*10 + player.xp;
 			player.niveau--;
@@ -103,9 +135,14 @@ function update_view(){
 
 function ajoutHabit() {
 	var e = document.getElementById("habitudeAAjouter").value;
-	player.habitude.push(e);
-	save_game();
-	update_view();
+	if(e.length> 3){
+
+		player.habitude.push(e);
+		save_game();
+		update_view();
+	}else{
+		document.getElementById("habitudeAAjouter").value = "";
+	}
 }
 
 function calculDateJour(){
