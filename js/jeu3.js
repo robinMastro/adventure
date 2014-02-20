@@ -51,6 +51,13 @@ function load_game() {
     var save_data = JSON.parse(atob(localStorage['SaveChain']));
     player = save_data;
 
+    if(player.nom != ""){
+    	document.location.href="../index.html"
+    }
+    if(player.gender=0){
+    	document.location.href="creation-name.html"
+    }
+
 }
 
 
