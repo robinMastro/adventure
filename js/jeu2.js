@@ -17,18 +17,25 @@ var player={
 	shoesX : 0,
 	pantsX : 0,
 	hautX : 0,
-	hatX : 0
+	hatX : 0,
+	shoes:1,
+	pants : 1,
+	haut :1,
+	hat :1
 };
+
 var prix;
 var bonusX; 
 var bonusG;
 var typeVetement;
+var id;
 
-function recupValeur(type, cout, xpBonus, goldBonus){
+function recupValeur(type, cout, xpBonus, goldBonus, idImage){
 	prix=cout;
 	bonusX=xpBonus;
 	bonusG=goldBonus;
-	typeVetement = type // 1 chaussures, 2 pants, 3 top et 4 hat
+	typeVetement = type; // 1 chaussures, 2 pants, 3 top et 4 hat
+	id=idImage;
 
 
 	majPrix();
@@ -50,27 +57,26 @@ function acheterProduit(){
 			if(typeVetement==1){
 				player.shoesX=bonusX;
 				player.shoesG=bonusG;
+				player.shoes=id;
 			}
 			if(typeVetement==2){
 				player.pantsX=bonusX;
 				player.pantsG=bonusG;
+				player.pants=id;
 			}
 			if(typeVetement==3){
 				player.hautX=bonusX;
 				player.hautG=bonusG;
+				player.haut=id;
 			}
 			if(typeVetement==4){
 				player.hatX=bonusX;
 				player.hatG=bonusG;
+				player.hat=id;
 			}
 			var e = document.getElementById("buyIt");
 			e.innerHTML = "Done";
-
-			
-
 		}
-
-
 
 	}
 	update_view();
