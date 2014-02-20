@@ -15,7 +15,7 @@
 		<![endif]-->	
 	</head>
 	
-  <body>
+  <body class="shop">
   
   <div id="page">
   
@@ -24,20 +24,24 @@
     
         <h1>Shop</h1>
         
+        <a id="back-shop" href="index.html">Back</a>
+        
+        <br />
+      Gold : <div id="gold"> 0 </div>
+        
         <ul id="head-shop">
           <li>Shoes</li>
           <li>Pants</li>
           <li>Top</li>
-          <li>Hat</li>
         </ul>
         
         <div id="content-item">
           <div class="wrapper-item">
           
             <div class="shoes col-item">
-              <p class="shop-item shoes-1">Shoes 1</p>
+              <p class="shop-item shoes-1" onclick="recupValeur(1,10,20,30);">Shoes 1</p>
               <p class="shop-item shoes-2">Shoes 1</p>
-              <p class="shop-item shoes-3">Shoes 1</p>
+              <p class="shop-item shoes-3" onclick="recupValeur(1,1,220,130);">Shoes 1</p>
               <p class="shop-item shoes-4">Shoes 1</p>
             </div><!-- *** END SHOES *** -->
             
@@ -68,17 +72,6 @@
             <hr class="clear"/>
           </div><!-- *** END WRAPPER ITEM *** -->
           
-          <div class="wrapper-item">
-    
-            <div class="hat col-item">
-              <p class="shop-item hat-1">Hat 1</p>
-              <p class="shop-item hat-2">Hat 1</p>
-              <p class="shop-item hat-3">Hat 1</p>
-              <p class="shop-item hat-4">Hat 1</p>
-            </div>
-            
-            <hr class="clear"/>
-          </div><!-- *** END WRAPPER ITEM *** -->
           <hr class="clear"/>
         </div><!-- *** END CONTENT ITEM *** -->
         
@@ -93,10 +86,10 @@
         <div id="box-marchand">
         
           <p id="text-marchand">This piece is a rare form of art, a very intricate 
-          object ! <span>+10% xp + 1% gold</span>
+          object ! <span>+0% xp + 0% gold</span><br /><span>Price : 0</span>
           </p>
           
-          <p id="buyIt">Buy it</p>
+          <p id="buyIt" onClick="acheterProduit();">Buy it</p>
           <p id="tryIt">Try it</p>
           
           <hr class="clear" />
@@ -123,7 +116,8 @@
         $(".shoes-3").addClass("item-current");
     });
   </script>
-  
+    <script src="../js/jeu2.js"></script>
+
   </body>
 	 
 </html>

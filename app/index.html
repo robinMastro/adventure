@@ -13,10 +13,6 @@
 		<!--[if lt IE 9]>
 		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->	
-		
-   <script type="text/javascript">
-  function ouvre(fichier) {ff=window.open(fichier,"popup","width=700,height=500,left=100,top=100") }
-  </script> 
   
 	</head>
 	
@@ -27,13 +23,9 @@
     <div id="app">
       <div class="wrapper">
       
-        <a class="button-page" href="shop.php"><img src="../img/store-button.png" alt="store button" /></a>
+        <a class="button-page" href="shop.html"><img src="../img/store-button.svg" alt="store button" /></a>
         
-        <a class="button-page" href="#"><img src="../img/stats-button.png" alt="stats button" /></a>
-        
-        <!-- <img id="personnage" src="../img/girl-noob.png" alt="girl noob" /> -->
-        
-        
+        <a class="button-page" href="#"><img src="../img/stats-button.svg" alt="stats button" /></a>
       
         <div id="speudo">
           
@@ -43,7 +35,7 @@
         
         <div id="level">
           
-          <p>Level <span>2</span></p>
+          <p>Level <span>1</span></p>
           
         </div><!-- *** END LEVEL *** -->
       
@@ -51,31 +43,31 @@
         
           <p><span id="experience">10</span>xp - <span id="needExperience">40 left to level up</span></p>
           
-          <a id="tweetIt" title="Partager sur Twitter" href="http://twitter.com/share?&amp;text=Un nouveau jeu trop bien :" target="popup" onClick="ouvre('http://twitter.com/share?&amp;text=Un nouveau jeu trop bien ');return false" >Tweet it !</a>
+          <a id="tweetIt" title="Partager sur Twitter" href="http://twitter.com/share?&amp;text=Un nouveau jeu trop bien :" target="popup" onClick="ouvre('http://twitter.com/share?&amp;text=Un nouveau jeu trop bien ');return false">Tweet it !</a>
           
         
           <p id="money"><span id="score">0</span></p>
   
-          <div id="Date">Date du jour : </div>
+          <div id="Date">Date du jour : </div><!-- *** END DATE *** -->
         
         </div><!-- *** END PANNEAU *** -->
         
   
-      	<div id="DateDernierClick"></div>
+      	<div id="DateDernierClick"></div><!-- *** END DATEPICKER *** -->
       	
       	<div id="personnage">
           
-          <img class="personnage-item" id="base" src="../img/objet/base.svg" alt="base" />
+          <img class="personnage-item" id="base" src="../img/character-items/base.svg" alt="base" />
           
-          <img class="personnage-item" id="top" src="../img/objet/top-base.svg" alt="top" />
+          <img class="personnage-item" id="pants" src="../img/character-items/pants-1.svg" alt="pants" />
           
-          <img class="personnage-item" id="pants" src="../img/objet/shorts-base.svg" alt="pants" />
+          <img class="personnage-item" id="top" src="../img/character-items/top-1.svg" alt="top" />
           
-          <img class="personnage-item" id="hair" src="../img/objet/hair1.svg" alt="hair" />
+          <img class="personnage-item" id="hair" src="../img/character-items/hairstyles/hairgirl-1.svg" alt="hair" />
            
-          <img class="personnage-item" id="shoes" src="../img/objet/shoes-base.svg" alt="shoes" />
+          <img class="personnage-item" id="shoes" src="../img/character-items/shoes-1.svg" alt="shoes" />
         
-        </div>
+        </div><!-- *** END PERSONNAGE *** -->
       	
       	
       </div><!-- *** END WRAPPER *** -->
@@ -84,55 +76,62 @@
     <div id="appButton">
       <div class="wrapper">
       
-      
-      <!--
-<div class="chainpop pop">
-          <form method="post" id="new_chain" action="#">
+        <div class="chainpop pop">
+  
+          <label>How is your chain called ?</label>
+                  
+          <input placeholder="Activity i'd like to do everyday ?" type="text" size="30" name="habitudeAAjouter" id="habitudeAAjouter"/>
+                  
+          <input type="button" value="OK" name="commit" id="chain_submit" class="close" onClick="ajoutHabit()"/> 
           
-              <label for="chainname">How is your character called ?</label>
-              
-              <input placeholder="Most awesome habit. Ever." type="text" size="30" name="chainname" id="chainname" />
-              
-              <input type="submit" value="OK" name="commit" id="chain_submit"/> or <a class="close">Cancel</a>
+        </div><!-- *** END CHAINPOP POP *** -->
         
-          </form>
-      </div>
--->
-      
-      <div class="chainpop pop">
-
-          
-              <label for="chainname">How is your chain called ?</label>
-              
-              <input placeholder="Activity i'd like to do everyday ?" type="text" size="30" name="habitudeAAjouter" id="habitudeAAjouter"/>
-              
-              <input type="button" value="OK" name="commit" id="chain_submit" onClick="ajoutHabit()"/> 
+        <div id="mainhabitude">
+          <select id="habitude" name="chainlist">
+            <option>Activity</option>
+          </select>
+        </div><!-- *** END MAIN HABITUDE *** -->
         
-
-      </div>
-      
-      <div id="mainhabitude">
-        <select id="habitude" name="chainlist">
-          <option>Activity</option>
-        </select>
-      </div><!-- *** END MAIN HABITUDE *** -->
-      
-      <div id="addchain">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px"
-          	 height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-          <g id="addchainbackground">
-          	<rect fill="#E7958D" width="48" height="48"/>
+        <div id="addchain">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 width="51.717px" height="59.746px" viewBox="0 0 51.717 59.746" enable-background="new 0 0 51.717 59.746" xml:space="preserve">
+            <g id="addchainbackground">
+            	<path opacity="0.4" fill="#E09790" d="M29.407,59.746c0,0,20.538-2.012,22.242-30.791C53.354,0.175,22.185-7.933,10.623,8.164
+            		C-0.841,24.124-12.24,58.926,29.407,59.746z"/>
+            </g>
+            <g id="addchainmove">
+            	<g>
+            		<rect x="24.865" y="18.736" fill="#A8514C" width="5" height="23"/>
+            		<rect x="15.865" y="27.736" fill="#A8514C" width="23" height="5"/>
+            	</g>
+            </g>
+            </svg>
+        </div><!-- *** END ADDCHAIN *** -->
+        
+        <div id="deletechain">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 width="49.987px" height="56.105px" viewBox="0 0 49.987 56.105" enable-background="new 0 0 49.987 56.105" xml:space="preserve">
+          <g id="deletechainbackground">
+          	<path opacity="0.4" fill="#E09790" d="M25.158,0.001c0,0-19.378-0.672-24.532,25.92c-5.157,26.592,22.868,38.008,35.632,24.45
+          		C48.913,36.928,63.845,5.928,25.158,0.001z"/>
           </g>
-          <g id="addchainmove">
-          	<g>
-          		<rect x="22" y="12" fill="#F8F6E7" width="5" height="23"/>
-          		<rect x="13" y="21" fill="#F8F6E7" width="23" height="5"/>
-          	</g>
+          <g id="deletechainmove">
+          	<path fill="#A8514C" d="M36.728,19.106l0.026,0.068H14.272l0.026-0.068c-0.498-0.164-0.859-0.629-0.859-1.182
+          		c0-0.689,0.56-1.248,1.249-1.248c0.192,0,0.371,0.046,0.534,0.123l0.715-1.789h5.828c0-0.46,0.373-0.833,0.833-0.833h4.996
+          		c0.46,0,0.832,0.373,0.832,0.833h6.662l0.715,1.789c0.162-0.077,0.342-0.123,0.534-0.123c0.689,0,1.249,0.559,1.249,1.248
+          		C37.587,18.477,37.226,18.942,36.728,19.106L36.728,19.106z M35.921,20.006c0.92,0,1.666,0.745,1.666,1.665
+          		s-0.745,1.665-1.666,1.665h-0.832v16.654H15.104V23.336h-0.833c-0.92,0-1.665-0.745-1.665-1.665s0.745-1.665,1.665-1.665H35.921
+          		L35.921,20.006z M29.26,35.827c0,0.92,0.746,1.665,1.665,1.665c0.92,0,1.666-0.745,1.666-1.665v-9.992
+          		c0-0.92-0.746-1.665-1.666-1.665c-0.919,0-1.665,0.745-1.665,1.665V35.827L29.26,35.827z M23.432,35.827
+          		c0,0.92,0.745,1.665,1.665,1.665c0.919,0,1.665-0.745,1.665-1.665v-9.992c0-0.92-0.745-1.665-1.665-1.665s-1.665,0.745-1.665,1.665
+          		V35.827L23.432,35.827z M17.603,35.827c0,0.92,0.746,1.665,1.665,1.665c0.92,0,1.666-0.745,1.666-1.665v-9.992
+          		c0-0.92-0.746-1.665-1.666-1.665c-0.919,0-1.665,0.745-1.665,1.665V35.827L17.603,35.827z"/>
           </g>
           </svg>
-      </div>
-    	
-    	<div onclick="clickMoney()" id="clickme"></div>
+        </div><!-- *** END DELETECHAIN *** -->
+      	
+      	<div onclick="clickMoney()" id="clickme">
+      	</div><!-- *** END CLICKME *** -->
     	
       </div><!-- *** END WRAPPER *** -->
     </div><!-- *** END APPBUTTON *** -->
@@ -143,6 +142,9 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="../js/jeu.js"></script>
   <script src="../js/addchain.js"></script>
+  <script type="text/javascript">
+    function ouvre(fichier) {ff=window.open(fichier,"popup","width=700,height=500,left=100,top=100") }
+  </script> 
   <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
   </body>
 	 
