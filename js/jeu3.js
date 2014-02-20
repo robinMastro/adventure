@@ -54,9 +54,6 @@ function load_game() {
     if(player.nom != ""){
     	document.location.href="../index.html"
     }
-    if(player.gender!=0){
-    	document.location.href="creation-name.html"
-    }
 
 }
 
