@@ -8,7 +8,7 @@ var player={
 	jourClick:0,
 	annulationClick:0,
 	jourConsecutifs:0,
-	niveau:0,
+	niveau:1,
 	habitude : Array(),
 	shoesG : 0,
 	pantsG : 0,
