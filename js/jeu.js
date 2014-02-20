@@ -17,9 +17,14 @@ var player={
 	shoesX : 0,
 	pantsX : 0,
 	hautX : 0,
-	hatX : 0
+	hatX : 0,
+	shoes:1,
+	pants : 1,
+	haut :1,
+	hat :1, 
+	nom :"",
+	gender: 0
 };
-
 
 
 
@@ -34,21 +39,21 @@ function clickMoney(){
 
 		//Gain d'argent
 		if(player.shoesG + player.pantsG + player.hautG + player.hatG != 0){
-			player.score= player.score + Math.round((player.jourConsecutifs+1)*(player.shoesG + player.pantsG + player.hautG + player.hatG)/100);
+			player.score= player.score + (player.jourConsecutifs+1) + Math.round((player.jourConsecutifs+1)*(player.shoesG + player.pantsG + player.hautG + player.hatG)/100);
 		}else{
 			player.score= player.score + (player.jourConsecutifs+1);
 		}
 
 		//Gain d'xp
-		if(player.shoesG + player.pantsG + player.hautG + player.hatG != 0){
-			player.xp = player.xp + Math.round((player.jourConsecutifs+1)*(player.shoesX + player.pantsX + player.hautX + player.hatX)/100);
+		if(player.shoesX + player.pantsX + player.hautX + player.hatX != 0){
+			player.xp = player.xp +(player.jourConsecutifs+1)+ Math.round((player.jourConsecutifs+1)*(player.shoesX + player.pantsX + player.hautX + player.hatX)/100);
 		}else{
 			player.xp = player.xp + player.jourConsecutifs+1;
 		}
 
 
 
-		if(player.xp > player.niveau * 10){
+		if(player.xp >= player.niveau * 10){
 			player.xp=0;
 			player.niveau++;
 		}
@@ -60,30 +65,32 @@ function clickMoney(){
 		player.annulationClick=0;
 	//	player.dateDernierClick = new Date();
 	}else{
-		if(player.shoesG + player.pantsG + player.hautG + player.hatG != 0){
-			player.score= player.score - Math.round((player.jourConsecutifs)*(player.shoesG + player.pantsG + player.hautG + player.hatG)/100);
-		}else{
-			player.score= player.score -(player.jourConsecutifs);
-		}
+		if(player.xp!=0){
+			if(player.shoesG + player.pantsG + player.hautG + player.hatG != 0){
+				player.score= player.score - (player.jourConsecutifs)- Math.round((player.jourConsecutifs)*(player.shoesG + player.pantsG + player.hautG + player.hatG)/100);
+			}else{
+				player.score= player.score -(player.jourConsecutifs);
+			}
 
-		if(player.shoesX + player.pantsX + player.hautX + player.hatX != 0){
-			player.xp = player.xp- Math.round((player.jourConsecutifs)*(player.shoesX + player.pantsX + player.hautX + player.hatX)/100);
-		}else{
-			player.xp= player.xp -(player.jourConsecutifs);
-		}
-		player.xp = player.xp- player.jourConsecutifs;
+			if(player.shoesX + player.pantsX + player.hautX + player.hatX != 0){
+				player.xp = player.xp- (player.jourConsecutifs) - Math.round((player.jourConsecutifs)*(player.shoesX + player.pantsX + player.hautX + player.hatX)/100);
+			}else{
+				player.xp= player.xp -(player.jourConsecutifs);
+			}
+			
 
 
-		if(player.xp <0){
-			player.xp=(player.niveau-1)*10 + player.xp;
-			player.niveau--;
-		}
-		player.jourConsecutifs--;
-		if(player.jourConsecutifs<0){
-			player.jourConsecutifs=0;
-		}
+			if(player.xp <0){
+				player.xp=(player.niveau-1)*10 + player.xp;
+				player.niveau--;
+			}
+			player.jourConsecutifs--;
+			if(player.jourConsecutifs<0){
+				player.jourConsecutifs=0;
+			}
 
-		player.annulationClick=1;
+			player.annulationClick=1;
+		}
 	}
 
     var e = document.getElementById("score");
@@ -131,6 +138,13 @@ function update_view(){
     for (var i=0;i<player.habitude.length;i++){
     	e.innerHTML= e.innerHTML + '<option value=' + player.habitude[i] +'> '+ player.habitude[i]+ '</option>';
 	}
+
+	var e = document.getElementById("personnage");
+	e.innerHTML= '<img class="personnage-item" id="base" src="../img/character-items/base.svg" alt="base" /><img class="personnage-item" id="pants" src="../img/character-items/pants-' + player.pants +'.svg" alt="pants" /> <img class="personnage-item" id="top" src="../img/character-items/top-'+ player.haut +'.svg" alt="top" /><img class="personnage-item" id="hair" src="../img/character-items/hairstyles/hairgirl-1.svg" alt="hair" /><img class="personnage-item" id="shoes" src="../img/character-items/shoes-'+player.shoes+ '.svg" alt="shoes" />';
+
+	//Ajout du personnage
+
+
 }
 
 function ajoutHabit() {

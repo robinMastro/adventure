@@ -67,6 +67,9 @@ a:focus{
 .boutonsubmit::-moz-focus-inner{
     border:0;
 }
+input{
+  color: #555;
+}
 
 
 /************************************************************************/
@@ -157,6 +160,7 @@ a:focus{
   text-decoration: none;
   padding: 15px;
   margin-left: 20px;
+  padding-bottom: 12px;
   border-bottom: 4px solid rgba(66,32,32,.6);
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;
@@ -841,6 +845,7 @@ a:focus{
   text-transform: uppercase;
   text-decoration: none;
   padding: 15px;
+  padding-bottom: 12px;
   margin-left: 20px;
   z-index: 10;
   border-bottom: 4px solid rgba(89,46,46,.6);
@@ -969,7 +974,7 @@ a:focus{
   -ms-animation: bg-home 100s linear infinite;
   animation: bg-home 100s linear infinite;
 }
-#creationSex, #creationFace{
+#creationSex, #creationFace, #creationName{
   background: url('../img/creation/header-wooder.svg') repeat-X center top;
   padding-top: 20px;
 }
@@ -1208,6 +1213,7 @@ a:focus{
   text-transform: uppercase;
   text-decoration: none;
   padding: 15px;
+  padding-bottom: 12px;
   z-index: 10;
   border-bottom: 4px solid rgba(89,46,46,.6);
   -webkit-transition: all .2s linear;
@@ -1262,6 +1268,25 @@ a:focus{
 }
 
 
+
+/************************************************************************/
+/*	CREATION NAME
+/************************************************************************/
+
+
+#name{
+  background: #fdfbec;
+  border: none;
+  padding: 15px;
+  display: block;
+  width: 305px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  padding-top: 16px;
+}
+#creationName h2{
+  margin-bottom: 50px;
+}
 
 
 
@@ -1358,7 +1383,7 @@ a:focus{
   float: right;
 }
 #score:before{
-  background: url('../img/coin.png') no-repeat;
+  background: url('../img/coin.svg') no-repeat;
   content: '';
   width: 19px;
   height: 22px;
@@ -1658,7 +1683,8 @@ label {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bcfb0', endColorstr='#daebdc',GradientType=0 );
 }
 #shop .wrapper{
-  padding-bottom: 50px;
+  background: url(../img/shop/shop-amoire.svg) no-repeat bottom center;
+  padding-bottom: 65px;
 }
 #shop h1{
   background: url('../img/shop/header-shop.svg') no-repeat center;
@@ -1667,7 +1693,7 @@ label {
   display: block;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 #back-shop{
   font-family: 'Syntax-LT-Std', helvetica, arial, sans-serif;
@@ -1681,7 +1707,8 @@ label {
   padding: 10px 20px;
   margin-left: 20px;
   position: absolute;
-  top: 0;
+  padding-bottom: 6px;
+  top: 10px;
   left: 0;
   border-bottom: 4px solid rgba(66,32,32,.6);
   -webkit-transition: all .2s linear;
@@ -1695,39 +1722,74 @@ label {
   filter: alpha(opacity=80);
   opacity: .8;
 }
+
+
+#gold{
+  position: absolute;
+  right: 0;
+  top: -20px;
+  height: 20px;
+  background: #9a504d;
+  width: 80px;
+  font-size: 18px;
+  padding-right: 10px;
+  line-height: 20px;
+  color: #fdfbec;
+  text-align: right;
+  font-family: 'freightmicro_bookregular', helvetica, arial, sans-serif;
+}
+#gold:before{
+  background: url('../img/shop/coin-shop.svg') no-repeat;
+  content: '';
+  width: 19px;
+  height: 22px;
+  display: block;
+  float: right;
+  margin-left: 8px;
+  position: relative;
+  top: 4px;
+}
+
+
+
 #head-shop{
   background: #d57563;
-  width: 92%;
+  background: url('../img/shop/head-top-background.svg') no-repeat left top;
+  width: 86%;
   height: 30px;
   margin: 0 auto;
+  padding-left: 9px;
+  padding-right: 9px;
 }
 #head-shop li{
   font-family: 'freightmicro_bookregular', helvetica, arial, sans-serif;
-  background: url('../img/shop/background-titre-item.png') no-repeat center center;
+  background: url('../img/shop/background-titre-item.svg') no-repeat center center;
   font-size: 16px;
   color: #fdfbec;
   float: left;
   line-height: 30px;
-  width: 135px;
+  width: 172px;
   text-align: center;
 }
 #content-item{
-  width: 90%;
+  width: 86%;
   margin: 0 auto;
   background: url('../img/shop/content-item-background.svg') no-repeat center center;
-  border: 6px solid #d57563;
-  border-top: 5px solid #a25552;
+  border: 9px solid #a25552;
+  border-top: 8px solid #a25552;
   border-bottom: 5px solid #a25552;
 }
 .wrapper-item{
   height: 350px;
-  width: 135px;     
+ /*  width: 135px;   */
+ width: 172px;   
   overflow: hidden;
   float: left
 }
 .col-item{
   height: 350px;
-  width: 150px;
+  /* width: 150px; */
+  width: 187px;
   overflow: auto;
 }
 .shop-item{
@@ -1735,7 +1797,7 @@ label {
   height: 135px;
   text-indent: -9999px;
   background: url('../img/shop/shop-item-background.svg') no-repeat center top;
-  margin: 0;
+  margin: 0 auto;
   cursor: pointer;
   position: relative;
 }
@@ -1769,13 +1831,53 @@ label {
 .shoes-1:after{
   background: url('../img/shop/shoes/shoes-1-shop.svg') no-repeat center 40px;
 }
+.shoes-2:after{
+  background: url('../img/shop/shoes/shoes-2-shop.svg') no-repeat center 40px;
+}
 .shoes-3:after{
-  background: url('../img/shop/shoes/shoes-1-shop.svg') no-repeat center 40px;
+  background: url('../img/shop/shoes/shoes-3-shop.svg') no-repeat center 40px;
+}
+.shoes-4:after{
+  background: url('../img/shop/shoes/shoes-4-shop.svg') no-repeat center 40px;
 }
 
+.pants-1:after{
+  background: url('../img/shop/pants/pants-1-shop.svg') no-repeat center 40px;
+}
+.pants-2:after{
+  background: url('../img/shop/pants/pants-2-shop.svg') no-repeat center 40px;
+}
+.pants-3:after{
+  background: url('../img/shop/pants/pants-3-shop.svg') no-repeat center 40px;
+}
+.pants-4:after{
+  background: url('../img/shop/pants/pants-4-shop.svg') no-repeat center 40px;
+}
+.pants-5:after{
+  background: url('../img/shop/pants/pants-5-shop.svg') no-repeat center 40px;
+}
+.pants-6:after{
+  background: url('../img/shop/pants/pants-6-shop.svg') no-repeat center 40px;
+}
 
-
-
+.top-1:after{
+  background: url('../img/shop/top/top-1-shop.svg') no-repeat center 40px;
+}
+.top-2:after{
+  background: url('../img/shop/top/top-2-shop.svg') no-repeat center 40px;
+}
+.top-3:after{
+  background: url('../img/shop/top/top-3-shop.svg') no-repeat center 40px;
+}
+.top-4:after{
+  background: url('../img/shop/top/top-4-shop.svg') no-repeat center 40px;
+}
+.top-5:after{
+  background: url('../img/shop/top/top-5-shop.svg') no-repeat center 40px;
+}
+.top-6:after{
+  background: url('../img/shop/top/top-6-shop.svg') no-repeat center 40px;
+}
 
 /*************/
 /*	END SHOP ITEM
@@ -1794,20 +1896,20 @@ label {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c8a83', endColorstr='#bddaab',GradientType=0 );
 }
 #marchand .wrapper{
-  background: url('../img/shop/marchand-back.svg') center 150px no-repeat;
+  background: url('../img/shop/marchand-back.svg') center 15px no-repeat;
   padding-bottom: 50px;
-  padding-top: 50px;
 }
 #marchand img{
   margin: 0 auto;
   display: block;
-  padding-top: 20px;
+  position: relative;
+  bottom: 40px;
 }
 #box-marchand{
   background: #fefcee;
   border: 8px solid #ce968f;
   position: relative;
-  margin-top: -25px;
+  bottom: 85px;
 }
 #box-marchand:before{
    background: url('../img/shop/box-text-background.svg') no-repeat;
@@ -1816,7 +1918,7 @@ label {
   height: 30px;
   position: absolute;
   top: -29px;
-  left: 380px;
+  left: 360px;
 }
 #text-marchand{
   font-family: 'freightmicro_bookregular', helvetica, arial, sans-serif;
