@@ -21,7 +21,9 @@ var player={
 	shoes:1,
 	pants : 1,
 	haut :1,
-	hat :1
+	hat :1, 
+	nom :"",
+	gender: 0
 };
 
 var prix;

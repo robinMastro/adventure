@@ -133,6 +133,9 @@ function update_view(){
     var xpNeeded = player.niveau *10 - player.xp;
     e.innerHTML=  xpNeeded + 'left to level up';
 
+    var e = document.getElementById("speudo");
+    e.innerHTML= '<p>' + player.nom + '</p> ';
+
     var e = document.getElementById("habitude");
     e.innerHTML= '';
     for (var i=0;i<player.habitude.length;i++){
@@ -140,8 +143,12 @@ function update_view(){
 	}
 
 	var e = document.getElementById("personnage");
-	e.innerHTML= '<img class="personnage-item" id="base" src="../img/character-items/base.svg" alt="base" /><img class="personnage-item" id="pants" src="../img/character-items/pants-' + player.pants +'.svg" alt="pants" /> <img class="personnage-item" id="top" src="../img/character-items/top-'+ player.haut +'.svg" alt="top" /><img class="personnage-item" id="hair" src="../img/character-items/hairstyles/hairgirl-1.svg" alt="hair" /><img class="personnage-item" id="shoes" src="../img/character-items/shoes-'+player.shoes+ '.svg" alt="shoes" />';
+	if(player.gender==2){
+		e.innerHTML= '<img class="personnage-item" id="base" src="../img/character-items/base.svg" alt="base" /><img class="personnage-item" id="pants" src="../img/character-items/pants-' + player.pants +'.svg" alt="pants" /> <img class="personnage-item" id="top" src="../img/character-items/top-'+ player.haut +'.svg" alt="top" /><img class="personnage-item" id="hair" src="../img/character-items/hairstyles/hairgirl-1.svg" alt="hair" /><img class="personnage-item" id="shoes" src="../img/character-items/shoes-'+player.shoes+ '.svg" alt="shoes" />';
+	}else{
+		e.innerHTML= '<img class="personnage-item" id="base" src="../img/character-items/base.svg" alt="base" /><img class="personnage-item" id="pants" src="../img/character-items/pants-' + player.pants +'.svg" alt="pants" /> <img class="personnage-item" id="top" src="../img/character-items/top-'+ player.haut +'.svg" alt="top" /><img class="personnage-item" id="hair" src="../img/character-items/hairstyles/hairboy-1.svg" alt="hair" /><img class="personnage-item" id="shoes" src="../img/character-items/shoes-'+player.shoes+ '.svg" alt="shoes" />';
 
+	}
 	//Ajout du personnage
 
 
@@ -157,6 +164,17 @@ function ajoutHabit() {
 	}else{
 		document.getElementById("habitudeAAjouter").value = "";
 	}
+}
+
+function deleteHabit(){
+	var e =document.getElementById('habitude').value;
+	for (var i=0;i<player.habitude.length;i++){
+    	if(e==player.habitude[i]){
+    		player.habitude.splice(i,1);
+    	}
+	}
+	save_game();
+	update_view();
 }
 
 function calculDateJour(){
