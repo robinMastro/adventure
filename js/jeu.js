@@ -34,14 +34,24 @@ function clickMoney(){
 	if((player.jourClick!= player.dateJour.getDate())|| (player.moisClick!= player.dateJour.getMonth())|| player.annulationClick==1){
 		var ancienJour = player.jourClick;
 		var ancienMois = player.moisClick;
+		var clickme = document.querySelector(".clickme");
+
 		player.jourClick=player.dateJour.getDate();
 		player.moisClick=player.dateJour.getMonth();
 
+		var clickme = document.querySelector(".clickme");
+		clickme.classList.add("clickmepushed");
+
 		//Gain d'argent
 		if(player.shoesG + player.pantsG + player.hautG + player.hatG != 0){
+
+
+
+
 			player.score= player.score + (player.jourConsecutifs+1) + Math.round((player.jourConsecutifs+1)*(player.shoesG + player.pantsG + player.hautG + player.hatG)/100);
 		}else{
 			player.score= player.score + (player.jourConsecutifs+1);
+
 		}
 
 		//Gain d'xp
@@ -65,6 +75,10 @@ function clickMoney(){
 		player.annulationClick=0;
 	//	player.dateDernierClick = new Date();
 	}else{
+
+		var clickme = document.querySelector(".clickme");
+		clickme.classList.remove("clickmepushed");
+
 		if(player.xp!=0){
 			if(player.shoesG + player.pantsG + player.hautG + player.hatG != 0){
 				player.score= player.score - (player.jourConsecutifs)- Math.round((player.jourConsecutifs)*(player.shoesG + player.pantsG + player.hautG + player.hatG)/100);
