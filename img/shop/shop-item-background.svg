@@ -2,19 +2,19 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="99.924px" height="220.827px" viewBox="0 0 99.924 220.827" enable-background="new 0 0 99.924 220.827"
+	 width="99.924px" height="220.828px" viewBox="0 0 99.924 220.828" enable-background="new 0 0 99.924 220.828"
 	 xml:space="preserve">
 <g>
-	<polygon fill="#D67563" points="13.462,108 5.462,108 5.462,220.827 13.462,220.814 	"/>
-	<polygon fill="#D67563" points="93.462,98 85.462,98 85.462,220.705 93.462,220.692 	"/>
+	<polygon fill="#D67563" points="13.462,108 5.462,108 5.462,221.828 13.462,221.814 	"/>
+	<polygon fill="#D67563" points="93.462,98 85.462,98 85.462,221.705 93.462,221.692 	"/>
 	<g>
-		<path fill="#CF968F" d="M99.924,109.989c0,5.253-22.368,9.511-49.962,9.511C22.369,119.5,0,115.242,0,109.989
-			c0-1.314,1.399-2.565,3.927-3.703c7.584-3.414,25.341-5.809,46.035-5.809c19.489,0,36.372,2.124,44.608,5.223
+		<path fill="#CF968F" d="M99.924,109.989c0,5.252-22.368,9.51-49.962,9.51C22.369,119.5,0,115.242,0,109.989
+			c0-1.314,1.399-2.565,3.927-3.703c7.584-3.414,25.341-5.809,46.035-5.809c19.489,0,36.372,2.124,44.607,5.223
 			C97.994,106.988,99.924,108.446,99.924,109.989z"/>
 		<rect y="97.643" fill="#CF968F" width="99.924" height="12.143"/>
 		<ellipse fill="#FAE7DE" cx="49.962" cy="97.846" rx="49.962" ry="9.511"/>
 	</g>
-	<rect x="5.462" fill="#D67563" width="8" height="98"/>
-	<rect x="85.462" fill="#D67563" width="8" height="98"/>
+	<rect x="5.462" y="-2" fill="#D67563" width="8" height="100"/>
+	<rect x="85.462" y="-2" fill="#D67563" width="8" height="100"/>
 </g>
 </svg>
