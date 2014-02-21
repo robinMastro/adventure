@@ -2080,6 +2080,7 @@ label {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c8a83', endColorstr='#bddaab',GradientType=0 );
 }
 #marchand .wrapper{
+  text-align: center;
   background: url('../img/shop/marchand-back.svg') center 15px no-repeat;
   padding-bottom: 50px;
 }
