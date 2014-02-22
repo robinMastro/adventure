@@ -73,6 +73,13 @@ input{
 a{
   -webkit-tap-highlight-color: transparent;
 }
+/*
+@media screen and (max-width: 600px){
+  html{
+    height: auto;
+  }
+}
+*/
 
 
 /************************************************************************/
@@ -623,6 +630,12 @@ a{
   position: relative;
   max-width: 100%;
 }
+#video-landing{
+  float: right;
+  z-index: 5;
+  position: relative;
+  max-width: 100%;
+}
 #shadow-easy{
   float: none;
   position: absolute !important;
@@ -650,7 +663,7 @@ a{
     width: 100%;
     float: none;
   }
-  #easy-landing img{
+  #easy-landing img, #video-landing{
     position: absolute;
     top: 180px;
     width: 389px;
@@ -667,8 +680,8 @@ a{
   }
 }
 @media screen and (max-width: 460px){
-  #easy-landing img{
-    top: 200px;
+  #easy-landing img, #video-landing{
+    top: 87px;
     width: 265px;
     margin-left: -132px;
   }
@@ -685,8 +698,8 @@ a{
   }
 }
 @media screen and (max-width: 333px){
-  #easy-landing img{
-    top: 220px;
+  #easy-landing img, #video-landing{
+    top: 107px;
   }
   #easy-landing .wrapper-landing{
     height: 680px;
@@ -921,6 +934,7 @@ a{
   height: 30px;
 }
 #credit-landing a{
+  min-width: 115px;
   color: #725a63;
   text-decoration: none;
   background: #2d1e23;
@@ -936,6 +950,11 @@ a{
 }
 #credit-landing a:hover{
   background: #23171b;
+}
+@media screen and (max-width: 500px){
+  #credit-landing{
+    display: none;
+  }
 }
 
 
@@ -1315,7 +1334,15 @@ a{
 #creationName h2{
   margin-bottom: 50px;
 }
-
+@media screen and (max-width: 370px){
+  #name{
+    max-width: 250px;
+  }
+  #creationName h2{
+    width: 90%;
+    font-size: 13px;
+  }
+}
 
 
 
@@ -1485,6 +1512,10 @@ a{
   filter: alpha(opacity=80);
   opacity: .8;
 }
+.button-page:last-of-type{
+  opacity: 0;
+  text-indent: -9999px;
+}
 #app .button-page:first-of-type{
   margin-top: 40px;
   margin-left: 0;
@@ -1525,6 +1556,11 @@ a{
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+.clickme:hover{
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=80);
+  opacity: .8;
 }
 
 .clickmepushed{
@@ -1762,6 +1798,7 @@ label {
   .chainpop{
     max-width: 300px;
     margin-left: -150px;
+    width: 95%;
   }
   #habitudeAAjouter{
     max-width: 175px;
@@ -1816,6 +1853,7 @@ label {
   }
   #speudo{
     margin-top: 340px;
+    margin-right: 33%;
   }  
   #addchain{
     margin-left: 32%;
@@ -1834,7 +1872,7 @@ label {
 }
 @media screen and (max-width: 320px){
   #speudo{
-    margin-right: 28%;
+    margin-right: 26%;
   }
   #panneau{
     margin-right: 11%;
@@ -2080,7 +2118,6 @@ label {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c8a83', endColorstr='#bddaab',GradientType=0 );
 }
 #marchand .wrapper{
-  text-align: center;
   background: url('../img/shop/marchand-back.svg') center 15px no-repeat;
   padding-bottom: 50px;
 }
@@ -2104,6 +2141,12 @@ label {
   position: absolute;
   top: -29px;
   left: 360px;
+}
+#BuySomething{
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  bottom: 35px;
 }
 #text-marchand{
   font-family: 'freightmicro_bookregular', helvetica, arial, sans-serif;
@@ -2278,8 +2321,34 @@ label {
 }
 
 
+/************************************************************************/
+/*	BUSINESS PLAN
+/************************************************************************/
 
 
 
+#businessPlan{
+  padding-bottom: 30px;
+}
+#businessPlan h2{
+  margin-top: 70px;
+  color: #4f3f47;
+}
+#businessPlan a{
+  text-decoration: none;
+  color: #444;
+  border-bottom: 1px solid #555;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  transition: all .2s linear;
+}
+#businessPlan a:hover{
+  border-bottom: 1px solid transparent;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=80);
+  opacity: .8;
+}
 
 

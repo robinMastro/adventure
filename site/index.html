@@ -14,6 +14,23 @@
 		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->	
     
+    <!-- iPad Landscape 1024x748 -->
+    <link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: landscape)" href="img/icons/apple-touch-icon-1024x748-precomposed.png">
+    <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/icons/apple-touch-icon-57x57-precomposed.png">
+
+    <link rel="shortcut icon" sizes="57x57" href="img/icons/apple-touch-icon-57x57-precomposed.png">
+    <link rel="shortcut icon" sizes="114x144" href="img/icons/apple-touch-icon-114x114-precomposed.png">
+    
+    <!--Splash screen for iOS Devices -->
+    <link rel="apple-touch-startup-image" href="img/icons/splash-screen-320x460.png"/>
+    <link rel="apple-touch-startup-image" sizes="1024x748" href="img/icons/splash-screen-1024x748.png" />
+    <link rel="apple-touch-startup-image" sizes="768x1004" href="img/icons/splash-screen-768x1004.png" />
+    <link rel="apple-touch-startup-image" sizes="640x960" href="img/icons/splash-screen-640x960.png" />
+    
+    
+    
 	</head>
 	
   <body>
@@ -98,7 +115,15 @@
         
           <img id="shadow-easy" src="img/landing/easy-use-background.svg" alt="shadow easy use" />
         
-          <img src="img/landing/easy-use.svg" alt="easy use" />
+          <!-- <img src="img/landing/easy-use.svg" alt="easy use" /> -->
+          
+          <video id="video-landing" width="389" height="708" loop autoplay="true" poster="img/landing/easy-use.svg">
+            <source src="img/movie/featuring.mp4" type="video/mp4" />
+            <source src="img/movie/featuring.webm" type="video/webm" />
+            <source src="img/movie/featuring.ogv" type="video/ogg" />
+            Ici l'alternative à la vidéo : un lien de téléchargement, un message, etc.
+          </video>
+          
         
           <h2>Easy as hell</h2>
           <p>Simply choose your character, give them a name, set-up your habits  and you’re pretty much good to go.</p>
@@ -136,6 +161,8 @@
         <div class="wrapper-landing"> 
         
           <a href="businessplan.html">Business plan & credits</a>
+          
+          <hr class="clear" />
         
         </div><!-- *** END WRAPPER LANDING *** -->
       </div><!-- *** END credit LANDING *** --> 

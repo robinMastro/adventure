@@ -9,20 +9,26 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Adventure Chain">
     <!-- iPad Landscape 1024x748 -->
-    <link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: landscape)" href="../img/icons/apple-touch-icon-1024x748-precomposed.png">
+    <link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: landscape)" href="img/icons/apple-touch-icon-1024x748-precomposed.png">
     <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/icons/apple-touch-icon-114x114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../img/icons/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/icons/apple-touch-icon-57x57-precomposed.png">
 
-    <link rel="shortcut icon" sizes="57x57" href="../img/icons/apple-touch-icon-57x57-precomposed.png">
-    <link rel="shortcut icon" sizes="114x144" href="../img/icons/apple-touch-icon-114x114-precomposed.png">
+    <link rel="shortcut icon" sizes="57x57" href="img/icons/apple-touch-icon-57x57-precomposed.png">
+    <link rel="shortcut icon" sizes="114x144" href="img/icons/apple-touch-icon-114x114-precomposed.png">
+    
+    <!--Splash screen for iOS Devices -->
+    <link rel="apple-touch-startup-image" href="img/icons/splash-screen-320x460.png"/>
+    <link rel="apple-touch-startup-image" sizes="1024x748" href="img/icons/splash-screen-1024x748.png" />
+    <link rel="apple-touch-startup-image" sizes="768x1004" href="img/icons/splash-screen-768x1004.png" />
+    <link rel="apple-touch-startup-image" sizes="640x960" href="img/icons/splash-screen-640x960.png" />
 
 		<meta name="description" content="Adventure chain." />
 		<meta name="keywords" content="Adventure, chain" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-		<link rel="stylesheet" type="text/css" href="../css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="../font/font.css">
-		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="font/font.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<link rel="icon" href="img/favicon.ico"/>
 		<!--[if lt IE 9]>
 		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -37,9 +43,9 @@
     <div id="app">
       <div class="wrapper">
       
-        <a class="button-page" href="shop.html"><img src="../img/store-button.svg" alt="store button" /></a>
+        <a class="button-page" href="shop.html"><img src="img/store-button.svg" alt="store button" /></a>
         
-        <a class="button-page" href="#"><img src="../img/stats-button.svg" alt="stats button" /></a>
+        <a class="button-page" href="#"><img src="img/stats-button.svg" alt="stats button" /></a>
       
         <div id="speudo">
           
@@ -57,7 +63,7 @@
         
           <p><span id="experience">10</span>xp - <span id="needExperience">40 left to level up</span></p>
           
-          <a id="tweetIt" title="Partager sur Twitter" href="http://twitter.com/share?&amp;text=Un nouveau jeu trop bien :" target="popup" onClick="ouvre('http://twitter.com/share?&amp;text=Un nouveau jeu trop bien ');return false">Tweet it !</a>
+          <a id="tweetIt" title="Partager sur Twitter" href="http://twitter.com/share?&amp;text=Un nouveau jeu trop bien :" target="popup" onClick="ouvre('http://twitter.com/share?&amp;text=A new tool to help you create better habits by making it fun ! ');return false">Tweet it !</a>
           
         
           <p id="money"><span id="score">0</span></p>
@@ -71,15 +77,15 @@
       	
       	<div id="personnage">
           
-          <img class="personnage-item" id="base" src="../img/character-items/base.svg" alt="base" />
+          <img class="personnage-item" id="base" src="img/character-items/base.svg" alt="base" />
           
-          <img class="personnage-item" id="pants" src="../img/character-items/pants-1.svg" alt="pants" />
+          <img class="personnage-item" id="pants" src="img/character-items/pants-1.svg" alt="pants" />
           
-          <img class="personnage-item" id="top" src="../img/character-items/top-1.svg" alt="top" />
+          <img class="personnage-item" id="top" src="img/character-items/top-1.svg" alt="top" />
           
-          <img class="personnage-item" id="hair" src="../img/character-items/hairstyles/hairgirl-1.svg" alt="hair" />
+          <img class="personnage-item" id="hair" src="img/character-items/hairstyles/hairgirl-1.svg" alt="hair" />
            
-          <img class="personnage-item" id="shoes" src="../img/character-items/shoes-1.svg" alt="shoes" />
+          <img class="personnage-item" id="shoes" src="img/character-items/shoes-1.svg" alt="shoes" />
         
         </div><!-- *** END PERSONNAGE *** -->
       	
@@ -156,8 +162,8 @@
   
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="../js/jeu.js"></script>
-  <script src="../js/addchain.js"></script>
+  <script src="js/jeu.js"></script>
+  <script src="js/addchain.js"></script>
   <script type="text/javascript">
     function ouvre(fichier) {ff=window.open(fichier,"popup","width=700,height=500,left=100,top=100") }
   </script> 
